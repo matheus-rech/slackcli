@@ -12,7 +12,8 @@
     "build:macos": "bun build --compile --minify --target=bun-darwin-x64 src/index.ts --outfile dist/slackcli-macos",
     "build:windows": "bun build --compile --minify --target=bun-windows-x64 src/index.ts --outfile dist/slackcli-windows.exe",
     "test": "bun test",
-    "type-check": "bunx tsc --noEmit"
+    "type-check": "bunx tsc --noEmit",
+    "type-check:tests": "bunx tsc -p tsconfig.test.json --noEmit"
   },
   "keywords": [
     "slack",
